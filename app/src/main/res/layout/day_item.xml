@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/rootLayout"
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="110dp"
+android:layout_height="wrap_content"
+android:gravity="center_horizontal"
+android:orientation="vertical"
+android:paddingHorizontal="10dp"
+android:paddingVertical="5dp">
+
+<TextView
+    android:id="@+id/tvDay"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:textColor="@color/black"
+    tools:text="@string/monday"/>
+
+<ImageView
+    android:id="@+id/ivClouds"
+    android:layout_marginVertical="5dp"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:src="@drawable/ic_cloud"/>
+
+<TextView
+    android:id="@+id/tvTemperature"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:textColor="@color/black"
+    tools:text="@string/plus_temperature"/>
+</LinearLayout>
