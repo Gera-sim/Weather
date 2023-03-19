@@ -6,7 +6,7 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class WeatherViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+class WeatherViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
 
     private val rootLayout: LinearLayout = itemView.findViewById(R.id.rootLayout)
     private val tvDay: TextView = itemView.findViewById(R.id.tvDay)

@@ -1,9 +1,7 @@
 <resources>
     <string name="app_name">Weather</string>
-    <string name="plus_temperature">+%s \u2103</string>
-    <string name="minus_temperature">-%s \u2103</string>
-
-    <string name="celsius" translatable="false">\u2103</string>
+    <string name="plus_temperature">+%s\u2103</string>
+    <string name="minus_temperature">-%s\u2103</string>
 
     <string name="monday">Monday</string>
     <string name="tuesday">Tuesday</string>
