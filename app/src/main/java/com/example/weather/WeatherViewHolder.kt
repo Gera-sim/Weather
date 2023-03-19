@@ -6,7 +6,7 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class WeatherViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
+class WeatherViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
     private val rootLayout: LinearLayout = itemView.findViewById(R.id.rootLayout)
     private val tvDay: TextView = itemView.findViewById(R.id.tvDay)
@@ -19,7 +19,7 @@ class WeatherViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
         val tempString =
             if (temp > 0) R.string.plus_temperature
             else R.string.minus_temperature
-        val celsius = R.string.celsius
+
         val tempColor = when {
             temp < -20 -> R.color.less_then_minus_20
             temp in -20..-10 -> R.color.minus_20_to_minus_10
@@ -32,7 +32,7 @@ class WeatherViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
 
         tvDay.text = item.day
         ivClouds.setImageResource(cloudsIcon)
-        tvTemperature.text = itemView.context.getString(tempString, temp, celsius)
+        tvTemperature.text = itemView.context.getString(tempString, temp)
         rootLayout.setBackgroundColor(itemView.context.getColor(tempColor))
     }
 }

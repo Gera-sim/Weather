@@ -1,7 +1,6 @@
 package com.example.weather
 
 import org.junit.Test
-
 import org.junit.Assert.*
 
 /**
